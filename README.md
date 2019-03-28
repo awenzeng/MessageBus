@@ -38,7 +38,9 @@ Or Maven:
 For info on using the bleeding edge, see the [Snapshots](https://jitpack.io/#awenzeng/camera) wiki page.
 
 ```
+
 # How do I use MessageBus?
+
 Simple use cases with MessageBus's generated API will look something like this:
 
 In your Activity:
