@@ -1,9 +1,46 @@
 # MessageBus
+[![JitPack](https://jitpack.io/v/awenzeng/MessageBus.svg)](https://jitpack.io/#awenzeng/MessageBus)
   MessageBus,easier for you to use Handler.(Welcome to Star and Fork)
   
   消息Bus,让你更加方便的使用Handler.
   
   在Android编程中，经常会遇到线程间消息传递，延迟操作，子线程与主线程切换等问题，利用handler，我们可以实现上述功能。然而在每一次使用中，总要考虑很多问题如：匿名内部类，内存泄漏等。为了解决这个问题，MessageBus来了，为了让我们更加方便的使用Handler而来.
+  
+# Download
+You can download the latest version from GitHub's [releases page](https://github.com/awenzeng/MessageBus/releases).
+
+Or use Gradle.
+```java
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+  ```
+  ```java
+  	dependencies {
+	         implementation 'com.github.awenzeng:MessageBus:v1.0'
+	}
+
+```
+Or Maven:
+```java
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+  ```
+  ```java
+  <dependency>
+	    <groupId>com.github.awenzeng</groupId>
+	    <artifactId>MessageBus</artifactId>
+	    <version>v1.0</version>
+	</dependency>
+```
+For info on using the bleeding edge, see the [Snapshots](https://jitpack.io/#awenzeng/MessageBus/v1.0) wiki page.
   
 # How do I use MessageBus?
 
