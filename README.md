@@ -1,11 +1,15 @@
 # MessageBus
-消息Bus,更加方便的使用Handler(Welcome to Star and Fork)
-
+  MessageBus,easier for you to use Handler.(Welcome to Star and Fork)
+  
+  消息Bus,让你更加方便的使用Handler.
+  
+  线程间消息传递，延迟操作等，在Android编程中也都是经常使用的功能，利用handler，我们可以实现上述功能，然而每一次使用，总是觉得不是那么方便，匿名内部类，内存泄漏也都是经常需要考虑的问题，这就为我们在使用Handler时，造成了困难。而MessageBus就是为了解决这个问题，让我们更加轻松的使用handler。
+  
 # How do I use MessageBus?
 
 Simple use cases with MessageBus's generated API will look something like this:
 
-In your Activity,add a method to handle message:
+Handle message:
 ```java
     MessageBus.getDefault().handleMessage(new IHandleMessage() {
             @Override
@@ -17,7 +21,7 @@ In your Activity,add a method to handle message:
         });
 
 ```
-send a message:
+Message:
 ```java
         Message msg = MessageBus.getDefault().obtainMessage();
         msg.obj = "感悟生命的意思！";
@@ -40,7 +44,7 @@ send a message:
         MessageBus.getDefault().sendEmptyMessageAtTime(0, SystemClock.uptimeMillis()+1000);
 
 ```
-send an runnable:
+Runnable:
 ```java
 
         MessageBus.getDefault().post(new Runnable() {
@@ -60,6 +64,7 @@ send an runnable:
         },5000);
 
 ```
+more info,you can run the sample.
 
 
 # License
